@@ -82,3 +82,44 @@ function capitalizeFirstLetter(str){
 }
 console.log(capitalizeFirstLetter(arrayCapital))
 
+// Live Test  
+
+function circuitPower(voltage,current ){
+    let voltageValue = voltage;
+    let currentValue = current;
+    let power = voltageValue * currentValue;
+    console.log(power)
+}
+circuitPower(110, 3)
+
+
+let arrayName = [1,5,80,4,3,6,50,60];
+function findMax(arr){
+let data = arr[0];
+    for (let i = 0;i<arr.length; i++){
+    if(arr[i]>data)
+        data=arr[i]
+    }
+    return data;
+}
+console.log(findMax(arrayName))
+
+
+const array1 = [1,5,80,4,3,6,50,60];
+const array2 = [2,1,0,40,5,6];
+function mergeArrays(arr1, arr2 ){
+    let arr1Value = arr1;
+    let arr2Value =  arr2;
+    let march = arr1Value + "," + arr2Value;
+    console.log(march)
+}
+mergeArrays(array1, array2 )
+
+
+function arrayValuesTypes(arrayFind){
+    arrayFind.forEach(function(item){
+        console.log(typeof item);
+    });
+}
+
+arrayValuesTypes([2, 10, "number", []])
